@@ -319,3 +319,70 @@
   width: 100%;
   height: auto;
 }
+
+#about {
+    width: 100%;
+    height: auto;
+    background-color: #E6C0BD;
+    color: #ffffff;
+}
+#about .inner {
+    padding: 130px 200px;
+}
+#about .container {
+    display: block;
+    width: 100%;
+}
+#about h1 {
+    display: block;
+    font-family: freight-text-pro, Garamond, Georgia, serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+#about h2 {
+    display: block;
+    margin-top: 40px;
+    font-family: freight-text-pro, Garamond, Georgia, serif;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 45px;
+}
+#about .about_dis {
+    display: block;
+    width: 70%;
+    margin: 32px 0 0 auto;
+    font-family: freight-text-pro, Garamond, Georgia, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+#about .about_btn {
+    display: block;
+    width: 70%;
+    height: 40px;
+    margin: 25px 0 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9d9da1;
+    text-decoration: none;
+    padding-top: 10px;
+}
+@media screen and (max-width: 991px) {
+    #about .inner {
+        padding: 100px 94px;
+    }
+    #about .about_dis {
+        width: 100%;
+        margin: 24px 0 0 0;
+    }
+    #about .about_btn {
+        width: 142px;
+        margin: 25px 0 0 0;
+    }
+}
+
