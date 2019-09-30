@@ -285,7 +285,7 @@
 /* top */
 #top {
     width: 100%;
-    height: 1000px;
+    height: auto;
 }
 #top .inner {
     width: 100%;
@@ -300,15 +300,18 @@
 }
 
 /* flickity custom */
+.flickity-page-dots {
+    bottom: 0px;
+}
 .flickity-page-dots .dot {
-    width: 13px;
-    height: 13px;
+    width: 12px;
+    height: 12px;
     opacity: 1;
     background: transparent;
-    border: 2px solid #F3ADAC;
+    border: 2px solid #ffffff;
 }
 .flickity-page-dots .dot.is-selected {
-    background: #F3ADAC;
+    background: #ffffff;
 }
 .g_1 {
   display: inline-block;
