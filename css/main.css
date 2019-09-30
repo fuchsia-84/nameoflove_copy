@@ -81,9 +81,21 @@
     padding-top: 10px;
     height: 80px;
     background: #E7C2BE;
-    transition: top 0.65s ease-in;
-    -webkit-transition: top 0.65s ease-in;
-    -moz-transition: top 0.65s ease-in;
+/*change opacity*/
+    filter:alpha(opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+/*fadein*/
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1}
 }
 #header.fixed #global_nav ul li a {
     color: #ffffff;
@@ -169,7 +181,24 @@
     #header.fixed {
         padding-top: 0;
         background: transparent;
+        /*reset opacity*/
+        filter:alpha(opacity=100);
+        -moz-opacity: 1;
+        opacity: 1;
+        /*reset animation*/
+        animation: none;
     }
+    /*reset font color*/
+    #header.fixed #global_nav ul li a {
+        color: #9d9da1;
+    }
+    #header.fixed .nav_ul_right li a {
+        color: #9d9da1;
+    }
+    #header.fixed .logo {
+        color: #9d9da1;
+    }
+
     #header_sp {
         background: #F6F0EB;
         width: 100%;
@@ -177,7 +206,6 @@
         z-index: 999;
         position: relative;
     }
-    
     #global_nav {
         position: absolute;
         /* 開いてないときは画面外に配置 */
