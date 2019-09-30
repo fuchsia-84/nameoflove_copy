@@ -1,2 +1,245 @@
 @charset "utf-8";
 @import url(../css/html5reset-1.6.1.css); /*reset css*/
+
+.inner {
+    width: 100%;
+    margin: auto;
+}
+.inner:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* header */
+#header {
+    top: -100px;
+    position: absolute;
+    width: 100%;
+    margin: 100px auto 0;
+    padding: 50px 0 0;
+    line-height: 1;
+    z-index: 999;
+    background-color: #F6F0EB;
+}
+#header a,
+#header {
+    text-decoration: none;
+    color: #cccccc;
+    font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+}
+#header .inner{
+    position: relative;
+    width: calc(100% - 160px);
+    margin: 0 80px;
+}
+#header .logo {
+    text-align: center;
+    font-size: 36px;
+}
+#header .nav_ul_right {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#header .nav_ul_right li {
+    float: right;
+    padding: 0 15px;
+}
+
+#global_nav .nav_ul_left {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#global_nav .nav_ul_left li {
+    float: left;
+    padding: 0 30px;
+}
+#global_nav .nav_ul_left li:nth-child(4),
+#global_nav .nav_ul_left li:nth-child(5),
+#global_nav .nav_ul_left li:nth-child(6),
+#global_nav .nav_ul_left li:nth-child(7) {
+    display: none;
+}
+#header_sp ul {
+    display: none;
+}
+/* Fixed */
+#header.fixed {
+    margin-top: 0;
+    top: 0;
+    position: fixed;
+    padding-top: 10px;
+    height: 55px;
+    background: #fff;
+    background: rgba(255,255,255,.7);
+    transition: top 0.65s ease-in;
+    -webkit-transition: top 0.65s ease-in;
+    -moz-transition: top 0.65s ease-in;
+}
+#header.fixed .logo {
+    font-size: 24px;
+}
+#header.fixed #global_nav .nav_ul_left li a {
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Toggle Button */
+#nav_toggle {
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 33px;
+    width: 57px;
+    height: 41px;
+    cursor: pointer;
+    z-index: 101;
+}
+#nav_toggle div {
+    position: relative;
+}
+#nav_toggle span {
+    display: block;
+    position: absolute;
+    left: 33%;
+    height: 2px;
+    width: 33%;
+    margin-top: 15px;
+    background: #666;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav_toggle span:nth-child(1) {
+    top: 0;
+}
+#nav_toggle span:nth-child(2) {
+    top: 5px;
+}
+#nav_toggle span:nth-child(3) {
+    top: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #header,
+    .inner {
+        width: 100%;
+        padding: 0;
+    }
+    #header {
+        top: 0;
+        position: fixed;
+        margin-top: 0;
+    }
+    #header .inner {
+        margin: 0;
+        width: 100%;
+    }
+    #header .nav_ul_right {
+        display: block;
+        list-style: none;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    #header .nav_ul_right li {
+        float: right;
+    }
+    #header .nav_ul_right li:nth-child(2),
+    #header .nav_ul_right li:nth-child(3),
+    #header .nav_ul_right li:nth-child(4)
+     {
+        display: none;
+    }
+    /* Fixed reset */
+    #header.fixed {
+        padding-top: 0;
+        background: transparent;
+    }
+    #header_sp {
+        background: #F6F0EB;
+        width: 100%;
+        height: 110px;
+        z-index: 999;
+        position: relative;
+    }
+    
+    #global_nav {
+        position: absolute;
+        /* 開いてないときは画面外に配置 */
+        top: 0;
+        left: 1025px;
+        background: #333;
+        width: calc(100% - 80px);
+        text-align: center;
+        padding: 10px 0;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        z-index: 1000;
+    }
+    #global_nav .nav_ul_left {
+        list-style: none;
+        position: static;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+    }
+    #global_nav .nav_ul_left li {
+        float: none;
+        position: static;
+    }
+    #header #global_nav .nav_ul_left li a,
+    #header.fixed #global_nav .nav_ul_left li a {
+        width: 100%;
+        display: block;
+        color: #fff;
+        padding: 18px 0;
+    }
+    #global_nav .nav_ul_left li:nth-child(4),
+    #global_nav .nav_ul_left li:nth-child(5),
+    #global_nav .nav_ul_left li:nth-child(6),
+    #global_nav .nav_ul_left li:nth-child(7) {
+        display: block;
+    }
+    #global_nav .nav_ul_right li {
+        display: none;
+    }
+    #nav_toggle {
+        display: block;
+    }
+    /* #nav_toggle 切り替えアニメーション */
+    .open #nav_toggle span:nth-child(1) {
+        top: 11px;
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+    .open #nav_toggle span:nth-child(2) {
+        width: 0;
+        left: 50%;
+    }
+    .open #nav_toggle span:nth-child(3) {
+        top: 11px;
+        -webkit-transform: rotate(-315deg);
+        -moz-transform: rotate(-315deg);
+        transform: rotate(-315deg);
+    }
+    /* #global_nav スライドアニメーション */
+    .open #global_nav {
+        -moz-transform: translateX(-920px);
+        -webkit-transform: translateX(-920px);
+        transform: translateX(-920px);
+    }
+}
+
