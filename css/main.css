@@ -286,6 +286,7 @@
 #top {
     width: 100%;
     height: auto;
+    background-color: #F6F0EB;
 }
 #top .inner {
     width: 100%;
@@ -300,17 +301,17 @@
 }
 
 /* flickity custom */
-.flickity-page-dots {
-    bottom: 0px;
+#top .flickity-page-dots {
+    bottom: 30px;
 }
-.flickity-page-dots .dot {
-    width: 12px;
-    height: 12px;
+#top .flickity-page-dots .dot {
+    width: 8px;
+    height: 8px;
     opacity: 1;
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
 }
-.flickity-page-dots .dot.is-selected {
+#top .flickity-page-dots .dot.is-selected {
     background: #ffffff;
 }
 .g_1 {

@@ -1,6 +1,8 @@
 $(function() {
     $('.main_gallery').flickity({
         autoPlay: true,
-        draggble: false
+        draggble: false,
+        pageDots: true,
+        prevNextButtons: false,
     });
 });
