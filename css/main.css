@@ -26,9 +26,11 @@
 #header a,
 #header {
     text-decoration: none;
-    color: #cccccc;
+    color: #9d9da1;
     font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
+    font-size: 12px;
+    line-height: 44px;
 }
 #header .inner{
     position: relative;
@@ -83,8 +85,14 @@
     -webkit-transition: top 0.65s ease-in;
     -moz-transition: top 0.65s ease-in;
 }
+#header.fixed #global_nav ul li a {
+    color: #ffffff;
+}
+#header.fixed .nav_ul_right li a {
+    color: #ffffff;
+}
 #header.fixed .logo {
-    font-size: 24px;
+    color: #ffffff;
 }
 
 /* Toggle Button */
