@@ -189,7 +189,7 @@
         /*reset animation*/
         animation: none;
     }
-    /*reset font color*/
+    /*reset menus style*/
     #header.fixed #global_nav ul li a {
         color: #9d9da1;
     }
