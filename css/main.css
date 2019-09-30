@@ -38,7 +38,10 @@
     margin: 0 80px;
 }
 #header .logo {
+    display: block;
+    width: 160px;
     text-align: center;
+    margin: 0 auto;
     font-size: 36px;
 }
 #header .nav_ul_right {
@@ -177,6 +180,9 @@
     #header .nav_ul_right li:nth-child(4)
      {
         display: none;
+    }
+    #header .logo {
+        padding-top: 33px;
     }
     /* Fixed reset */
     #header.fixed {
