@@ -386,3 +386,27 @@
     }
 }
 
+/*shop by color*/
+#shop_by_color {
+    width: 100%;
+}
+#shop_by_color .inner{
+    padding: 80px 90px;
+}
+#shop_by_color .color_content {
+    width: 100%;
+}
+#shop_by_color .color_content img{
+    width: 100%;
+    height: auto;
+}
+#shop_by_color .color_content .color_dis {
+    display: none;
+}
+@media screen and (max-width: 991px) {
+    #shop_by_color .color_content .color_dis {
+        display: block;
+    }
+}
+
+
