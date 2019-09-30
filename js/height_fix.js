@@ -7,7 +7,7 @@ $win.on('load resize', function() {
     var header_innner_height=$("#header .inner").height();
     var header_sp_height=$("#header_sp").height();
 
-    if(windowWidth > 1024) {
+    if(windowWidth > 992) {
         $("#content").css("padding-top", header_height + header_innner_height);
     } else {
         $("#content").css("padding-top", header_sp_height);
