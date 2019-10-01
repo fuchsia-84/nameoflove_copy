@@ -11,6 +11,11 @@
     display: block;
 }
 
+/*no-gutters*/
+.no-gutters {
+    padding: 0;
+    margin: 0;
+}
 /* header */
 #header {
     top: -100px;
@@ -389,12 +394,14 @@
 /*shop by color*/
 #shop_by_color {
     width: 100%;
+    background-color: #F6F0EB;
 }
 #shop_by_color .inner{
     padding: 80px 90px;
 }
 #shop_by_color .color_content {
     width: 100%;
+    padding: 0 10px;
 }
 #shop_by_color .color_content img{
     width: 100%;
@@ -404,8 +411,50 @@
     display: none;
 }
 @media screen and (max-width: 991px) {
+    #shop_by_color .inner {
+        padding: 80px 70px;
+    }
+    #shop_by_color .color_content {
+        padding: 0;
+    }
     #shop_by_color .color_content .color_dis {
         display: block;
+        text-align: center;
+        padding: 36px 0;
+    }
+    #shop_by_color .color_content .color_dis .color_name {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-family: freight-display-pro, Garamond, Georgia, serif;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 30px;
+        color: #707272;
+    }
+    #shop_by_color .color_content .color_dis .shop_dress_btn {
+        display: block;
+        text-decoration: none;
+        width: 50%;
+        margin: 50px auto 0;
+        font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 44px;
+        color: #ffffff;
+        background-color: #CC818A;
+    }
+}
+@media screen and (max-width: 767px) {
+    #shop_by_color .inner {
+        padding: 80px 0;
+    }
+    #shop_by_color .color_content .color_dis {
+        padding: 36px 20px 0;
+    }
+    #shop_by_color .color_content .color_dis .shop_dress_btn {
+        width: 100%;
+        margin: 50px 0;
     }
 }
 
