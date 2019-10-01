@@ -489,4 +489,101 @@
     }
 }
 
+/*shop all styles*/
+#shop_all_styles {
+    width: 100%;
+    background-color: #F6F0EB;
+}
+#shop_all_styles .inner{
+    padding: 80px 90px;
+}
+#shop_all_styles .shop_title {
+    display: block;
+    margin-bottom: 90px;
+}
+#shop_all_styles .shop_title .shop_num {
+    display: inline;
+    margin-right: 100px;
+    font-family: freight-display-pro, Garamond, Georgia, serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color: #707272;
+}
+#shop_all_styles .shop_title .shop_how {
+    display: inline;
+    font-family: freight-display-pro, Garamond, Georgia, serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color: #707272;
+}
+#shop_all_styles .shop_content {
+    width: 100%;
+    padding: 0 10px;
+}
+#shop_all_styles .shop_content img{
+    width: 100%;
+    height: auto;
+}
+#shop_all_styles .shop_content .shop_dis {
+    display: none;
+}
+@media screen and (max-width: 991px) {
+    #shop_all_styles .inner {
+        padding: 80px 70px;
+    }
+    #shop_all_styles .shop_title .shop_num {
+        margin-right: 150px;
+    }
+    #shop_all_styles .shop_content {
+        padding: 0;
+    }
+    #shop_all_styles .shop_content .shop_dis {
+        display: block;
+        text-align: center;
+        padding: 36px 0;
+    }
+    #shop_all_styles .shop_content .shop_dis p {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        font-family: freight-display-pro, Garamond, Georgia, serif;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 30px;
+        color: #707272;
+    }
+    #shop_all_styles .shop_content .shop_dis a {
+        display: block;
+        text-decoration: none;
+        width: 50%;
+        margin: 50px auto 0;
+        font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 44px;
+        color: #ffffff;
+        background-color: #CC818A;
+    }
+}
+@media screen and (max-width: 767px) {
+    #shop_all_styles .inner {
+        padding: 80px 0;
+    }
+    #shop_all_styles .shop_title {
+       margin-left: 20px;
+    }
+    #shop_all_styles .shop_title .shop_num {
+        display: none;
+    }
+    #shop_all_styles .shop_content .shop_dis {
+        padding: 36px 20px 0;
+    }
+    #shop_all_styles .shop_content .shop_dis a {
+        width: 100%;
+        margin: 50px 0;
+    }
+}
+
 
