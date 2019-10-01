@@ -399,6 +399,28 @@
 #shop_by_color .inner{
     padding: 80px 90px;
 }
+#shop_by_color .shop_title {
+    display: block;
+    margin-bottom: 90px;
+}
+#shop_by_color .shop_title .shop_num {
+    display: inline;
+    margin-right: 100px;
+    font-family: freight-display-pro, Garamond, Georgia, serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color: #707272;
+}
+#shop_by_color .shop_title .shop_how {
+    display: inline;
+    font-family: freight-display-pro, Garamond, Georgia, serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color: #707272;
+}
+
 #shop_by_color .color_content {
     width: 100%;
     padding: 0 10px;
@@ -413,6 +435,9 @@
 @media screen and (max-width: 991px) {
     #shop_by_color .inner {
         padding: 80px 70px;
+    }
+    #shop_by_color .shop_title .shop_num {
+        margin-right: 150px;
     }
     #shop_by_color .color_content {
         padding: 0;
@@ -448,6 +473,12 @@
 @media screen and (max-width: 767px) {
     #shop_by_color .inner {
         padding: 80px 0;
+    }
+    #shop_by_color .shop_title {
+       margin-left: 20px;
+    }
+    #shop_by_color .shop_title .shop_num {
+        display: none;
     }
     #shop_by_color .color_content .color_dis {
         padding: 36px 20px 0;
