@@ -308,6 +308,9 @@ input, button, textarea, select {
 #top .main_gallery {
     width: 100%;
 }
+#top .main_gallery_tab {
+    display: none;
+}
 
 /* flickity custom */
 #top .flickity-page-dots {
@@ -328,7 +331,22 @@ input, button, textarea, select {
   width: 100%;
   height: auto;
 }
-
+@media screen and (max-width: 991px) {
+    #top .main_gallery{
+        display: none;
+    }
+    #top .main_gallery_tab {
+        display: block;
+    }
+}
+@media screen and (max-width: 767px) {
+    #top .main_gallery{
+        display: block;
+    }
+    #top .main_gallery_tab {
+        display: none;
+    }
+}
 #about {
     width: 100%;
     height: auto;
