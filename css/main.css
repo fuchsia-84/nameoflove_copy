@@ -10,12 +10,18 @@
     clear: both;
     display: block;
 }
-
 /*no-gutters*/
 .no-gutters {
     padding: 0;
     margin: 0;
 }
+/*appearance*/
+input, button, textarea, select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 /* header */
 #header {
     top: -100px;
@@ -584,6 +590,118 @@
         width: 100%;
         margin: 50px 0;
     }
+}
+
+/*footer*/
+#footer {
+    background-color: #CC818A;
+    color: #ffffff;
+    font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 44px;
+}
+#footer .inner {
+    padding: 100px;
+    position: relative;
+}
+#footer .footer_form {
+    width: 400px;
+    height: 44px;
+    position: absolute;
+    z-index: 500;
+}
+#footer .footer_form h1 {
+    width: 160px;
+    font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 44px;
+    float: left;
+}
+#footer .footer_form form#f1 {
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    height: auto;
+    float: left;
+}
+#footer .footer_form form#f1 input[type="email"] {
+    padding: 0;
+    width: 100%;
+    font-family: apercu-medium, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #CC818A;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    line-height: 44px;
+    position: relative;
+}
+#footer .footer_form form#f1 input[type="email"]:focus {
+    outline: 0;
+}
+#footer .footer_form form#f1 input[type="email"]::placeholder {
+    color: #ffffff;
+}
+/*IE*/
+#footer .footer_form form#f1 input[type="email"]:-ms-input-placeholder {
+    color: #ffffff;
+}
+/*Edge*/
+#footer .footer_form form#f1 input[type="email"]::-ms-input-placeholder {
+    color: #ffffff;
+}
+#footer .footer_form form#f1 input[type="submit"] {
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #CC818A;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+}
+#footer .footer_form form#f1 input[type="submit"]:focus {
+    outline: 0;
+}
+
+#footer .sns_links {
+    width: calc((100% - 200px)*0.2);
+    height: 44px;
+    list-style: none;
+    position: absolute;
+    left: calc(50% - (100% - 200px)*0.1);
+    z-index: 501;
+}
+#footer .sns_links li{
+    text-align: center;
+    min-width: 25%;
+    width: 25%;
+    float: left;
+}
+#footer .sns_links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+#footer .footer_nav {
+    list-style-type: none;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: calc(100% - 200px);
+    z-index: 300;
+}
+#footer .footer_nav li {
+    float: right;
+    padding:  0 10px;
+}
+#footer .footer_nav li a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 
