@@ -59,13 +59,16 @@ input, button, textarea, select {
     width: calc(100% - 160px);
     margin: 0 80px;
 }
-#header .logo {
+#header a#logo {
+    fill: currentColor;
+    color: #666;
     display: block;
     position: absolute;
     width: 160px;
     text-align: center;
     left: calc(50% - 80px);
     font-size: 36px;
+    z-index: 1001;
 }
 #header .nav_ul_right {
     list-style: none;
@@ -129,7 +132,7 @@ input, button, textarea, select {
 #header.fixed .nav_ul_right li a {
     color: #ffffff;
 }
-#header.fixed .logo {
+#header.fixed a#logo {
     color: #ffffff;
 }
 
@@ -201,7 +204,7 @@ input, button, textarea, select {
      {
         display: none;
     }
-    #header .logo {
+    #header a#logo {
         padding-top: 33px;
     }
     /* Fixed reset */
@@ -222,7 +225,7 @@ input, button, textarea, select {
     #header.fixed .nav_ul_right li a {
         color: #9d9da1;
     }
-    #header.fixed .logo {
+    #header.fixed a#logo {
         color: #9d9da1;
     }
 
