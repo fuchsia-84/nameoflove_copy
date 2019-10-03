@@ -50,17 +50,18 @@ input, button, textarea, select {
 }
 #header .logo {
     display: block;
+    position: absolute;
     width: 160px;
     text-align: center;
-    margin: 0 auto;
+    left: calc(50% - 80px);
     font-size: 36px;
 }
 #header .nav_ul_right {
     list-style: none;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    z-index: 1000;
 }
 #header .nav_ul_right li {
     float: right;
@@ -130,7 +131,6 @@ input, button, textarea, select {
     width: 57px;
     height: 41px;
     cursor: pointer;
-    z-index: 101;
 }
 #nav_toggle div {
     position: relative;
@@ -179,9 +179,7 @@ input, button, textarea, select {
         list-style: none;
         position: absolute;
         top: 25px;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
+        right: 0;
     }
     #header .nav_ul_right li {
         float: right;
@@ -236,7 +234,7 @@ input, button, textarea, select {
         -webkit-transition: .5s ease-in-out;
         -moz-transition: .5s ease-in-out;
         transition: .5s ease-in-out;
-        z-index: 1000;
+        z-index: 1001;
     }
     #global_nav .nav_ul_left {
         list-style: none;
