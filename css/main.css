@@ -332,6 +332,10 @@ input, button, textarea, select {
   height: auto;
 }
 @media screen and (max-width: 991px) {
+    #top .inner {
+        width: 100%;
+        padding: 0;
+    }
     #top .main_gallery{
         display: none;
     }
