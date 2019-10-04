@@ -637,6 +637,16 @@ input, button, textarea, select {
     #top .main_gallery_tab {
         display: block;
     }
+    /*flickity custom*/
+    #top .flickity-prev-next-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 0;
+    }
+    #top .flickity-button-icon {
+        fill: #9d9da1;
+    }
+
     .slide_text_top_1 {
         width: 40%;
         left: 70px;
@@ -671,6 +681,13 @@ input, button, textarea, select {
     #top .main_gallery_tab {
         display: none;
     }
+    /*flickity custom*/
+    #top .flickity-page-dots .dot {
+        width: 10px;
+        height: 10px;
+        margin: 0 15px;
+    }
+
     .slide_text_top_1 {
         display: none;
     }
