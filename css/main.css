@@ -468,6 +468,10 @@ input, button, textarea, select {
     #top .main_gallery{
         display: block;
     }
+    #top .main_gallery img {
+        height: 790px;
+        object-fit: cover;
+    }
     #top .main_gallery_tab {
         display: none;
     }
