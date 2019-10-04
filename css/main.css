@@ -21,10 +21,23 @@ input, button, textarea, select {
     -moz-appearance: none;
     appearance: none;
 }
+/*show element animation*/
+.show_element {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(80px);
+    transition: all 1s;
+}
+.show_element.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
 .content {
     position: relative;
     z-index: 5;
     margin-bottom: 244px;
+    background-color: #F6F0EB;
 }
 @media screen and (max-width: 991px) {
     .content {
