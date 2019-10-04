@@ -33,6 +33,13 @@ input, button, textarea, select {
     visibility: visible;
     transform: translateY(0px);
 }
+@media screen and (max-width: 991px) {
+    .show_element {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+}
 .content {
     position: relative;
     z-index: 5;
