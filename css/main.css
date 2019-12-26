@@ -509,21 +509,20 @@ input, button, textarea, select {
     width: 315px;
     height: 350px;
     margin: auto 0;
-
 }
 .slide_text_top_1 h1 {
     font-family: freight-display-pro, Garamond, Georgia, serif;
     font-weight: 300;
     font-size: 45px;
     line-height: 50px;
-    color: #ffffff;
+    color: #9d9da1;
 }
 .slide_text_top_1 p {
     font-family: freight-display-pro, Garamond, Georgia, serif;
     font-weight: 300;
     font-size: 22px;
     line-height: 27px;
-    color: #ffffff;
+    color: #9d9da1;
     margin-top: 25px;
 }
 .slide_text_top_1 a {
@@ -551,7 +550,6 @@ input, button, textarea, select {
     width: 315px;
     height: 350px;
     margin: auto 0;
-
 }
 .slide_text_odd h1 {
     font-family: freight-display-pro, Garamond, Georgia, serif;
@@ -582,6 +580,12 @@ input, button, textarea, select {
     color: #9d9da1;
     text-decoration: none;
     padding-top: 12px;
+}
+.slide_text_odd#slide_text_odd_1 h1 {
+    color: #9d9da1;
+}
+.slide_text_odd#slide_text_odd_1 p {
+    color: #9d9da1;
 }
 .slide_text_even {
     position: absolute;
