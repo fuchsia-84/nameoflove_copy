@@ -80,8 +80,6 @@ input, button, textarea, select {
     margin: 0 80px;
 }
 #header a#logo {
-    fill: currentColor;
-    color: #666;
     display: block;
     position: absolute;
     width: 160px;
@@ -89,6 +87,9 @@ input, button, textarea, select {
     left: calc(50% - 80px);
     font-size: 36px;
     z-index: 1001;
+}
+#header a#logo > svg {
+    fill: currentColor;
 }
 #header .nav_ul_right {
     list-style: none;
