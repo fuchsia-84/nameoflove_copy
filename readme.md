@@ -60,4 +60,5 @@
 - [HTML5 Reset Stylesheet \| HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/)
 - [Flickity](https://flickity.metafizzy.co/)
 - [Bootstrap](https://getbootstrap.jp/)
+- [2.400万点以上の高品質なフリー画像素材 - Pixabay](https://pixabay.com/ja/)
 - 書籍: 久保田涼子著「Webデザイン良質見本帳」SBクリエイティブ株式会社
